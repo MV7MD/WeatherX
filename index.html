@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- pta-000 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherX - Climate Action</title>
+    <link rel="icon" href="data:image/svg+xml,><svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text x=%2250%25%22 y=%2255%25%22 font-size=%2270%22 font-weight=%22bold%22 font-family=%22Arial, sans-serif%22 fill=%22%#e67e22%# text-anchor=%22middle%# dominant-baseline=%22middle%#>WX</text></svg>">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Weather<span class="highlight">X</span></div>
+        
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-key="nav_home">Home</a></li>
+            <li><a href="#about" data-key="nav_about">About Us</a></li>
+            <li><a href="#climate" data-key="nav_climate">Climate Change</a></li>
+            <li><a href="#causes" data-key="nav_causes">Causes</a></li>
+            <li><a href="#effects" data-key="nav_effects">Effects</a></li>
+            <li><a href="#weather" data-key="nav_weather">Weather</a></li>
+            <li><a href="#contact" data-key="nav_contact">Contact</a></li>
+        </ul>
+        
+        <div class="nav-controls">
+            <button id="lang-toggle" class="btn-lang">Ar</button>
+            
+            <button id="theme-toggle" class="btn-icon">
+                <i class="fas fa-moon"></i>
+            </button>
+            
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="section active-section">
+        <div class="hero">
+            <h1 data-key="hero_title">Protect Our <span class="highlight">Future</span></h1>
+            <p data-key="hero_desc">Join the global movement to combat climate change and secure a sustainable planet.</p>
+            <a href="#climate" class="btn-main" data-key="btn_learn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-key="about_title">About Us</h2>
+            <div class="about-content">
+                <p data-key="about_desc">WeatherX is a non-profit initiative dedicated to raising awareness about the urgent need for climate action. We believe that through education and technology, we can inspire a global community.</p>
+                <div class="stats">
+                    <div class="stat-box">
+                        <span class="number">50+</span>
+                        <span class="label" data-key="stat_countries">Countries</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">10K+</span>
+                        <span class="label" data-key="stat_members">Members</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="climate" class="section">
+        <div class="container">
+            <h2 data-key="climate_title">What is Climate Change?</h2>
+            <p class="lead-text" data-key="climate_desc">Climate change refers to long-term shifts in temperatures and weather patterns. These shifts may be natural, but since the 1800s, human activities have been the main driver.</p>
+            <div class="icon-large"><i class="fas fa-globe-americas"></i></div>
+        </div>
+    </section>
+
+    <section id="causes" class="section">
+        <div class="container">
+            <h2 data-key="causes_title">Causes of Climate Change</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-smog"></i>
+                    <h3 data-key="cause_1_title">Fossil Fuels</h3>
+                    <p data-key="cause_1_desc">Burning coal, oil and gas generates greenhouse gases that act like a blanket wrapped around the Earth.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tree"></i>
+                    <h3 data-key="cause_2_title">Deforestation</h3>
+                    <p data-key="cause_2_desc">Cutting down forests creates emissions and reduces the planet's capability to absorb CO2.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-industry"></i>
+                    <h3 data-key="cause_3_title">Industrial Activity</h3>
+                    <p data-key="cause_3_desc">Manufacturing and industry produce emissions, mostly from burning fossil fuels to produce energy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="effects" class="section">
+        <div class="container">
+            <h2 data-key="effects_title">Effects on the Planet</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-temperature-high"></i>
+                    <h3 data-key="effect_1_title">Hotter Temperatures</h3>
+                    <p data-key="effect_1_desc">Nearly all land areas are seeing more hot days and heat waves.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-water"></i>
+                    <h3 data-key="effect_2_title">Rising Ocean</h3>
+                    <p data-key="effect_2_desc">The ocean soaks up most of the heat from global warming, melting ice sheets and raising sea levels.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <h3 data-key="effect_3_title">Severe Storms</h3>
+                    <p data-key="effect_3_desc">Changes in temperature cause changes in rainfall. This results in more severe and frequent storms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="weather" class="section">
+        <div class="container">
+            <h2 data-key="weather_title">Global Weather</h2>
+            
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city (e.g., London, Dubai)" data-key="search_placeholder">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="weather-card">
+                <div class="weather-header">
+                    <h3 id="city-name">Cairo, Egypt</h3>
+                    <p id="date">Live Data</p>
+                </div>
+                <div class="weather-body">
+                    <div class="temp-box">
+                        <span id="temperature">--</span>
+                        <span id="unit">°C</span>
+                    </div>
+                    <p id="description">Ready to search...</p>
+                    <div class="wind-box">
+                        <i class="fas fa-wind"></i> <span id="wind-speed">--</span> km/h
+                    </div>
+                </div>
+                <button id="unit-toggle" class="btn-secondary" data-key="btn_switch_unit">Switch to °F</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-key="contact_title">Contact Us</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-main" data-key="btn_send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by <a href="https://www.linkedin.com/in/muhammad-abuelmaged" target="_blank" style="text-decoration: none; color: inherit;"><strong>Muhammad Abuelmagd</strong></a> &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
